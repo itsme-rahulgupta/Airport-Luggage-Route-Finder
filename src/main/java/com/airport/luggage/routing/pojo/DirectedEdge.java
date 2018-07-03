@@ -1,4 +1,4 @@
-package luggage.pojo;
+package com.airport.luggage.routing.pojo;
 
 public class DirectedEdge {
     private final Vertex source;

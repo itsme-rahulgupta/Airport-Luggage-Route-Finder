@@ -1,4 +1,4 @@
-package luggage;
+package com.airport.luggage.routing;
 
 public class FindShortestRouteFactory {
 

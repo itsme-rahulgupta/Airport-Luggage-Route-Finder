@@ -1,4 +1,4 @@
-package luggage.pojo;
+package com.airport.luggage.routing.pojo;
 
 public class Bag {
     private final String id;

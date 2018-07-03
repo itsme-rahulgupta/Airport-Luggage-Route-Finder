@@ -1,4 +1,4 @@
-package luggage;
+package com.airport.luggage.routing;
 
 import com.airport.luggage.routing.pojo.DirectedEdge;
 import com.airport.luggage.routing.pojo.RouteGraphMap;
@@ -12,7 +12,7 @@ public class FindShortestRouteImpl implements FindShortestRoute {
 
     private final static String SINGLE_WHITE_SPACE=" ";
 
-    Map<String, RouteGraphMap> visitedMap=new ConcurrentHashMap<>(); // Visited map with the sourceName as the key
+    Map<String, RouteGraphMap> visitedMap=new ConcurrentHashMap<String, RouteGraphMap>(); // Visited map with the sourceName as the key
 
     @Override
     public String findShortestPath(String entryGate, String destGate, List<DirectedEdge> edges) {

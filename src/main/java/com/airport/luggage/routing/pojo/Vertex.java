@@ -1,4 +1,4 @@
-package luggage.pojo;
+package com.airport.luggage.routing.pojo;
 
 
 import java.util.*;
@@ -7,7 +7,7 @@ public class Vertex implements Comparable<Vertex>{
     private final String name;
     private int time =Integer.MAX_VALUE; //Will be the total time for the shortest path to this Vertex from the source Vertex specfied in the RouteGraphMap
     private Vertex prevVertext = null;
-    private final Map<Vertex, Integer> neighbours = new HashMap<>(); //The neighbour Vertex and the time to it
+    private final Map<Vertex, Integer> neighbours = new HashMap<Vertex, Integer>(); //The neighbour Vertex and the time to it
 
     public Vertex(String name) {
         this.name = name;

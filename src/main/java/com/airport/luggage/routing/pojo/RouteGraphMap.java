@@ -1,4 +1,4 @@
-package luggage.pojo;
+package com.airport.luggage.routing.pojo;
 
 
 import java.util.*;

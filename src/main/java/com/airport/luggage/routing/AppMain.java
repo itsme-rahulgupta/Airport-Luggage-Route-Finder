@@ -1,4 +1,4 @@
-package luggage;
+package com.airport.luggage.routing;
 
 import com.airport.luggage.routing.pojo.Bag;
 import com.airport.luggage.routing.pojo.DirectedEdge;
@@ -65,7 +65,7 @@ public class AppMain {
             throw new IllegalArgumentException("Illegal arguments or inputs. Please refer to readme for the input data format.");
         }
         String next=scanner.nextLine();
-        List<DirectedEdge> edges=new ArrayList<>();
+        List<DirectedEdge> edges=new ArrayList<DirectedEdge>();
         while (!next.startsWith(INPUT_DATA_SECTION_HEAD)){
             String[] parts=next.trim().split("\\s+");
             if(parts.length>=3) {
@@ -84,7 +84,7 @@ public class AppMain {
 
     private static Map<String,String> parseInputDepartures(Scanner scanner){
         String next=scanner.nextLine();
-        Map<String,String> departuresMap=new HashMap<>();
+        Map<String,String> departuresMap=new HashMap<String,String>();
         while(!next.startsWith(INPUT_DATA_SECTION_HEAD)){
             String [] parts=next.trim().split("\\s+");
             if(parts.length >= 2){
@@ -99,7 +99,7 @@ public class AppMain {
 
     private static List<Bag> parseInputBags(Scanner scanner){
         String next ;
-        List<Bag> bagList= new ArrayList<>();
+        List<Bag> bagList= new ArrayList<Bag>();
         do{
             next = scanner.nextLine();
             String [] parts = next.trim().split("\\s+");
